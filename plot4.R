@@ -27,7 +27,7 @@ data <- load_data()
 # summarize_data(data)
 
 
-# ----------  Create histogram  ----------
+# ----------  Create plot  ----------
 
 # Global options
 par(cex=.5)
