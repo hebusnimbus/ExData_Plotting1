@@ -193,7 +193,7 @@ load_data <- function() {
 # ---------------------------------------------------------------------------- #
 
 summarize_data <- function(data) {
-    # ----------  Print summary about empty and invalid values ('?')  ----------
+    # ----------  Print summary about invalid values ('?')  ----------
 
     columnNames <- names(data)
     columnNames <- columnNames[(columnNames != "Date") & (columnNames != "Time")]
@@ -207,7 +207,7 @@ summarize_data <- function(data) {
         )
     }
 
-    # Another way is to check for invalid values is to look at the class of the
+    # Another way to check for invalid values is to look at the class of the
     # columns ('factor' for invalid values, 'numeric' otherwise)
     for (name in columnNames) {
         printf(
